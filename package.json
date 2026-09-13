@@ -1,0 +1,30 @@
+{
+  "name": "bot-tele-jaseb",
+  "version": "1.0.0",
+  "description": "Telegram Bot - Jasa Sebar & Sewa Jasa dengan sistem kode redeem",
+  "main": "dist/bot/index.js",
+  "scripts": {
+    "dev": "tsx watch src/bot/index.ts",
+    "build": "tsc",
+    "start": "node dist/bot/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.52",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "0.36.4",
+    "grammy": "1.30.0",
+    "input": "^1.0.1",
+    "nanoid": "5.0.9",
+    "pg": "^8.13.1",
+    "telegram": "^2.26.22"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "0.28.1",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}
