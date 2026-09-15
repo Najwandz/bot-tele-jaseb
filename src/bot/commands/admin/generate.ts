@@ -25,7 +25,7 @@ composer.command("generate", adminOnly, async (ctx) => {
 
   await ctx.reply(
     "🎫 *Generate Kode Redeem*\n\n" +
-      "Kode berlaku untuk Jasa Sebar & Sewa Jasa.\n" +
+      "Kode berlaku untuk Pengumuman.\n" +
       "Pilih durasi layanan:",
     {
       parse_mode: "Markdown",
@@ -129,7 +129,7 @@ composer.callbackQuery(/^gen:qty:(\d+)$/, adminOnly, async (ctx) => {
     `✅ *Kode Berhasil Digenerate!*\n\n` +
       `Durasi layanan: ${result.durationDays} hari\n` +
       `Harga jual: ${formatPrice(result.price)}\n` +
-      `Berlaku untuk: Jasa Sebar & Sewa Jasa\n` +
+      `Berlaku untuk: Pengumuman\n` +
       `Kode expire: ${expiryDate}\n` +
       `Jumlah: ${quantity} kode\n\n` +
       `*Kode Redeem:*\n${codesFormatted}`,

@@ -59,12 +59,12 @@ export async function handleBroadcast(ctx: Context) {
   if (isBroadcastingByAccount(accountId!)) {
     const state = getBroadcastStateByAccount(accountId!)!;
     await ctx.reply(
-      `⚠️ *Akun ${accountLabel} sedang broadcast!*\n\n` +
+      `⚠️ *Akun ${accountLabel} sedang Pengumuman!*\n\n` +
         `Putaran: ke-${state.round}\n` +
         `Progress: ${state.sent}/${state.total} terkirim`,
       {
         parse_mode: "Markdown",
-        reply_markup: new InlineKeyboard().text("🛑 Stop Broadcast", `bc:stop:${accountId}`),
+        reply_markup: new InlineKeyboard().text("🛑 Stop Pengumuman", `bc:stop:${accountId}`),
       }
     );
     return;

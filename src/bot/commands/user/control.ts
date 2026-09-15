@@ -90,7 +90,7 @@ composer.callbackQuery("ctrl:grant", async (ctx) => {
     `🤝 *Berikan Akses Remote*\n\n` +
       `Kirimkan *ID Telegram* pengguna yang ingin Anda berikan akses.\n` +
       `(Contoh: \`123456789\`)\n\n` +
-      `_Catatan: Pengguna tersebut nantinya bisa mengontrol (Scan/Broadcast) akun Anda._`,
+      `_Catatan: Pengguna tersebut nantinya bisa mengontrol (Scan/Pengumuman) akun Anda._`,
     {
       parse_mode: "Markdown",
       reply_markup: new InlineKeyboard().text("❌ Batal", "ctrl:cancel_grant"),

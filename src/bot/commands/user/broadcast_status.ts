@@ -14,7 +14,7 @@ async function buildBCStatus(userId: number) {
 
   if (accounts.length === 0) {
     return {
-      text: "📊 *Status Broadcast*\n\nBelum ada akun terhubung.\n\nGunakan menu 🎛 Control untuk menambah akun.",
+      text: "📊 *Status Pengumuman*\n\nBelum ada akun terhubung.\n\nGunakan menu 🎛 Control untuk menambah akun.",
       keyboard: new InlineKeyboard().text("🔄 Refresh", "bcst:refresh"),
     };
   }
@@ -42,7 +42,7 @@ async function buildBCStatus(userId: number) {
   }
 
   const text =
-    `📊 *Status Broadcast*\n\n` +
+    `📊 *Status Pengumuman*\n\n` +
     lines.join("\n\n");
 
   // Bangun keyboard

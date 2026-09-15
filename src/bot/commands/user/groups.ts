@@ -139,7 +139,7 @@ async function handleBuatListGrup(ctx: Context) {
   await ctx.reply(
     "📝 *Buat List Grup Baru*\n\n" +
       "Langkah 1/2: Beri nama untuk list ini.\n\n" +
-      "Contoh: `Promo Harian`, `Grup Jualan`, `Target Sebar`\n\n" +
+      "Contoh: `Promo Harian`, `Grup Jualan`, `Target Kirim`\n\n" +
       "Ketik nama list:",
     { parse_mode: "Markdown" }
   );

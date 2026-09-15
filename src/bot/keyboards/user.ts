@@ -11,7 +11,7 @@ export function afterRedeemMenu() {
 }
 
 /**
- * Dashboard Userbot setelah login berhasil.
+ * Dashboard Robot setelah login berhasil.
  */
 export function sewaJasaDashboard() {
   return new InlineKeyboard()
